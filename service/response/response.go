@@ -4,9 +4,9 @@ Manipulation of the response from the Service.
 package response
 
 import (
+	"github.com/BuiChiTrung/go-pdk/bridge"
 	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/types/known/structpb"
-	"github.com/BuiChiTrung/go-pdk/bridge"
 )
 
 // Holds this module's functions.  Accessible as `kong.ServiceResponse`
@@ -68,6 +68,6 @@ func (r Response) GetHeader(name string) (string, error) {
 
 // kong.ServiceResponse.GetRawBody() returns the raw body
 // of the response from the Service.
-func (r Response) GetRawBody() (string, error) {
-	return r.AskString(`kong.service.response.get_raw_body`, nil)
+func (r Response) GetRawBody() (interface{}, error) {
+	return r.AskValue(`kong.service.response.get_raw_body`, nil)
 }
