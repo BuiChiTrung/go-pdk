@@ -36,6 +36,10 @@ func (r Response) GetStatus() (int, error) {
 	return r.AskInt(`kong.response.get_status`, nil)
 }
 
+func (r Response) GetRawBody() (string, error) {
+	return r.AskString(`kong.response.get_raw_body`, nil)
+}
+
 // kong.Response.GetHeader() returns the value of the specified
 // response header, as would be seen by the client once received.
 //
