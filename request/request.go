@@ -9,8 +9,8 @@ import (
 	"errors"
 	"io/ioutil" //nolint:all // TODO: update to remove deprecated dependency
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/BuiChiTrung/go-pdk/bridge"
+	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

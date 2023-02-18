@@ -3,9 +3,9 @@ package service
 import (
 	"testing"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/bridge/bridgetest"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/BuiChiTrung/go-pdk/bridge"
+	"github.com/BuiChiTrung/go-pdk/bridge/bridgetest"
+	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 )
 

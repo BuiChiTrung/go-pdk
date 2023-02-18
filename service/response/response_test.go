@@ -3,15 +3,15 @@ package response
 import (
 	"testing"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/bridge/bridgetest"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/BuiChiTrung/go-pdk/bridge"
+	"github.com/BuiChiTrung/go-pdk/bridge/bridgetest"
+	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestResponse(t *testing.T) {
 	h, err := bridge.WrapHeaders(map[string][]string{
-		"Host":   []string{"example.com"},
+		"Host":         []string{"example.com"},
 		"X-Two-Things": []string{"first", "second"},
 	})
 	assert.NoError(t, err)
@@ -40,7 +40,7 @@ this is the content`
 	res_h, err := response.GetHeaders(30)
 	assert.NoError(t, err)
 	assert.Equal(t, map[string][]string{
-		"Host":   []string{"example.com"},
+		"Host":         []string{"example.com"},
 		"X-Two-Things": []string{"first", "second"},
 	}, res_h)
 

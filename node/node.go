@@ -4,8 +4,8 @@ Node-level utilities
 package node
 
 import (
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/BuiChiTrung/go-pdk/bridge"
+	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 )
 
 // Holds this module's functions.  Accessible as `kong.Node`

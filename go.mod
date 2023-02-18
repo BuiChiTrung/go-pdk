@@ -1,4 +1,4 @@
-module github.com/Kong/go-pdk
+module github.com/BuiChiTrung/go-pdk
 
 go 1.18
 

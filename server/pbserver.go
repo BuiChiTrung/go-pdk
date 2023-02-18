@@ -7,8 +7,8 @@ import (
 	"log"
 	"net"
 
-	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/BuiChiTrung/go-pdk"
+	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/proto"
 )
 
