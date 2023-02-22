@@ -6,9 +6,9 @@ A set of functions to access the routing properties of the request.
 package router
 
 import (
-	"github.com/BuiChiTrung/go-pdk/bridge"
-	"github.com/BuiChiTrung/go-pdk/entities"
-	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
+	"github.com/Kong/go-pdk/bridge"
+	"github.com/Kong/go-pdk/entities"
+	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
 )
 
 // Holds this module's functions.  Accessible as `kong.Router`

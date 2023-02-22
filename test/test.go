@@ -8,7 +8,7 @@ Trivial example:
 	import (
 		"testing"
 
-		"github.com/BuiChiTrung/go-pdk/test"
+		"github.com/Kong/go-pdk/test"
 		"github.com/stretchr/testify/assert"
 	)
 
@@ -51,23 +51,22 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/BuiChiTrung/go-pdk"
-	"github.com/BuiChiTrung/go-pdk/bridge"
-	"github.com/BuiChiTrung/go-pdk/bridge/bridgetest"
-	"github.com/BuiChiTrung/go-pdk/client"
-	"github.com/BuiChiTrung/go-pdk/ctx"
-	"github.com/BuiChiTrung/go-pdk/ip"
-	"github.com/BuiChiTrung/go-pdk/log"
-	"github.com/BuiChiTrung/go-pdk/nginx"
-	"github.com/BuiChiTrung/go-pdk/node"
-	"github.com/BuiChiTrung/go-pdk/request"
-	"github.com/BuiChiTrung/go-pdk/response"
-	"github.com/BuiChiTrung/go-pdk/router"
-	"github.com/BuiChiTrung/go-pdk/service"
-	service_request "github.com/BuiChiTrung/go-pdk/service/request"
-	service_response "github.com/BuiChiTrung/go-pdk/service/response"
+	"github.com/Kong/go-pdk/bridge"
+	"github.com/Kong/go-pdk/bridge/bridgetest"
+	"github.com/Kong/go-pdk/client"
+	"github.com/Kong/go-pdk/ctx"
+	"github.com/Kong/go-pdk/ip"
+	"github.com/Kong/go-pdk/log"
+	"github.com/Kong/go-pdk/nginx"
+	"github.com/Kong/go-pdk/node"
+	"github.com/Kong/go-pdk/request"
+	"github.com/Kong/go-pdk/response"
+	"github.com/Kong/go-pdk/router"
+	"github.com/Kong/go-pdk/service"
+	service_request "github.com/Kong/go-pdk/service/request"
+	service_response "github.com/Kong/go-pdk/service/response"
 
-	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
+	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"
 )

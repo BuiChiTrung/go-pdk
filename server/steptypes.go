@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/BuiChiTrung/go-pdk/client"
-	"github.com/BuiChiTrung/go-pdk/entities"
-	"github.com/BuiChiTrung/go-pdk/node"
+	"github.com/Kong/go-pdk/client"
+	"github.com/Kong/go-pdk/entities"
+	"github.com/Kong/go-pdk/node"
 )
 
 type Error string

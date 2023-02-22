@@ -9,8 +9,8 @@ import (
 	"errors"
 	"io/ioutil" //nolint:all // TODO: update to remove deprecated dependency
 
-	"github.com/BuiChiTrung/go-pdk/bridge"
-	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
+	"github.com/Kong/go-pdk/bridge"
+	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 
@@ -229,8 +229,6 @@ func (r Request) GetRawBody() ([]byte, error) {
 }
 
 // kong.Request.GetUriCaptures() returns the catured URI fragements.
-//
-//
 func (r Request) GetUriCaptures() ([][]byte, map[string][]byte, error) {
 	out := new(kong_plugin_protocol.UriCapturesResult)
 	err := r.Ask("kong.request.get_uri_captures", nil, out)

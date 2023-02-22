@@ -3,8 +3,8 @@ package bridge
 import (
 	"testing"
 
-	"github.com/BuiChiTrung/go-pdk/bridge/bridgetest"
-	"github.com/BuiChiTrung/go-pdk/server/kong_plugin_protocol"
+	"github.com/Kong/go-pdk/bridge/bridgetest"
+	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
 )
 
 func TestAsk(t *testing.T) {

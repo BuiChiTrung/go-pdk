@@ -18,7 +18,7 @@
   `kong.service.response.get_raw_body`,
   and body parameter type of `kong.response.exit` to `[]byte`.
   Note that old version (before 3.0.1, or commits before cd2bcf9) of kong is incompatible after this change.
-  [#132](https://github.com/BuiChiTrung/go-pdk/pull/132)
+  [#132](https://github.com/Kong/go-pdk/pull/132)
   [kong/kong#9526](https://github.com/Kong/kong/pull/9526)
 
 ## [v0.8.0]
@@ -27,13 +27,13 @@
 
 ### Changes
 
-- fix kong.Request.GetRawBody() with buffered content by @javierguerragiraldez in [#91](https://github.com/BuiChiTrung/go-pdk/pull/91)
-- avoid pass-by-value of objects that contain locks. by @javierguerragiraldez in [#79](https://github.com/BuiChiTrung/go-pdk/pull/79)
-- bump go version by @fffonion in [#112](https://github.com/BuiChiTrung/go-pdk/pull/112)
+- fix kong.Request.GetRawBody() with buffered content by @javierguerragiraldez in [#91](https://github.com/Kong/go-pdk/pull/91)
+- avoid pass-by-value of objects that contain locks. by @javierguerragiraldez in [#79](https://github.com/Kong/go-pdk/pull/79)
+- bump go version by @fffonion in [#112](https://github.com/Kong/go-pdk/pull/112)
 
 ### Addtions
 
-- chore(*) add dependabot by @mayocream in [#98](https://github.com/BuiChiTrung/go-pdk/pull/98)
+- chore(*) add dependabot by @mayocream in [#98](https://github.com/Kong/go-pdk/pull/98)
 
 ## [v0.7.1]
 
@@ -41,14 +41,14 @@
 
 ### Changes
 
-- fix testing: don't break when the plugin Exit()s [#73](https://github.com/BuiChiTrung/go-pdk/pull/73)
-- Ignore unexported struct fields in config struct by @ctrox [#69](https://github.com/BuiChiTrung/go-pdk/pull/69)
-- Start every Headers field empty but non-null [#74](https://github.com/BuiChiTrung/go-pdk/pull/74)
+- fix testing: don't break when the plugin Exit()s [#73](https://github.com/Kong/go-pdk/pull/73)
+- Ignore unexported struct fields in config struct by @ctrox [#69](https://github.com/Kong/go-pdk/pull/69)
+- Start every Headers field empty but non-null [#74](https://github.com/Kong/go-pdk/pull/74)
 
 ### Additions
 
-- Feat/plugin testing [#64](https://github.com/BuiChiTrung/go-pdk/pull/64)
-- Add godoc comments [#65](https://github.com/BuiChiTrung/go-pdk/pull/65)
+- Feat/plugin testing [#64](https://github.com/Kong/go-pdk/pull/64)
+- Add godoc comments [#65](https://github.com/Kong/go-pdk/pull/65)
 
 ## [v0.7.0]
 
